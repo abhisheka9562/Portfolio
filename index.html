@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abhishek | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<!-- home page -->
+
+  <header>
+    <div class="logo">Abhishek<span>.</span></div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="home">
+    <div class="home-text">
+      <p class="role">Computer Science Graduate</p>
+      <h1>Hi, I'm <span class="highlight">Niya</span></h1>
+      <h2>From Kerala</h2>
+    </div>
+    <div class="home-img">
+      <img src="images/sec2-1.jpg" alt=" Profile" />
+    </div>
+  </section>
+
+<!-- about page -->
+
+  <section class="about" id="about">
+    <!-- <div class="about-img">
+      <img src="images/sec2-1.jpg" alt="About Image" />
+    </div> -->
+    <div class="about-content">
+      <h2>About Me</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet sapien quis, elementum molestie tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+      </p>
+      <div class="tab-menu">
+        <span class="tab-link active" onclick="openTab('skills')">Skills</span>
+        <span class="tab-link" onclick="openTab('education')">Education</span>
+      </div>
+      <div class="tab-content active-tab" id="skills">
+        <p><span class="pink">UI/UX</span><br />Designing Web/App interfaces</p>
+        <p><span class="pink">Web Development</span><br />Web app Development</p>
+        <p><span class="pink">App Development</span><br />Building Android/iOS apps</p>
+      </div>
+      <div class="tab-content" id="education">
+        <p><span class="pink">B.Tech</span><br />NSS College of Engineering, Palakkad</p>
+        <p><span class="pink">Minor in ML</span><br />APJ Abdul Kalam Technological University</p>
+        <p><span class="pink">B.Tech</span><br />NSS College of Engineering, Palakkad</p>
+      </div>
+    </div>
+  </section>
+  <script src="script.js"></script>
+
+</body>
+</html>
