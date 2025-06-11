@@ -8,22 +8,28 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-
 </head>
 <body>
 <!-- home page -->
 
   <header>
-    <div class="logo">Abhishek<span>.</span></div>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  <div class="logo">Abhishek<span>.</span></div>
+
+  <!-- Hamburger icon for mobile -->
+  <div class="menu-toggle" id="menu-toggle">
+    <i class="fa fa-bars"></i>
+  </div>
+
+  <nav id="nav-menu">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
   <section class="home">
     <div class="home-text">
       <p class="role">Computer Science Graduate</p>
@@ -31,7 +37,7 @@
       <h2>From Kerala</h2>
     </div>
     <div class="home-img">
-      <img src="images/sec2-1.jpg" alt=" Profile" />
+      <img src="images/abhishek.jpg" alt="Profile" />
     </div>
   </section>
 
@@ -44,7 +50,9 @@
     <div class="about-content">
       <h2>About Me</h2>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet sapien quis, elementum molestie tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+        Computer Science graduate with a strong interest in software development. Gained hands-on experience in Java, Spring Boot, 
+ Flutter, and deep learning through various projects. A dedicated problem solver with over 150 problems solved on LeetCode. 
+ Seeking opportunities to learn new technologies and apply them to real-world problems. 
       </p>
       <div class="tab-menu">
         <span class="tab-link active" onclick="openTab('skills')">Skills</span>
@@ -56,9 +64,9 @@
         <p><span class="pink">App Development</span><br />Building Android/iOS apps</p>
       </div>
       <div class="tab-content" id="education">
-        <p><span class="pink">B.Tech</span><br />NSS College of Engineering, Palakkad</p>
-        <p><span class="pink">Minor in ML</span><br />APJ Abdul Kalam Technological University</p>
-        <p><span class="pink">B.Tech</span><br />NSS College of Engineering, Palakkad</p>
+        <p><span class="pink">BTech in Computer Science and Engineering </span><br />NSS College of Engineering, Palakkad</p>
+        <p><span class="pink">Higher Secondary </span><br />G.H.S.S	POTTASSERRY	</p>
+        <p><span class="pink">Secondary</span><br />	M.E.T.E.M.H.S.S	</p>
       </div>
     </div>
   </section>
@@ -67,28 +75,28 @@
     <h2 class="section-title">My Work</h2>
     <div class="work-container">
       <div class="work-card">
-        <img src="images/sec2-1.jpg" alt="Social Media App" />
+        <img src="images/JobNest.jpg" alt="JobNest:	Microservices-Based	Job	Portal" />
         <div class="layer">
-          <h3>Social Media App</h3>
-          <p>The app connects you to talented people around the world. Download it from Play Store.</p>
-          <a href="#"><i class="fa fa-external-link"></i></a>
+          <h3>JobNest:	Microservices-Based	Job	Portal</h3>
+          <p>JobNest connects job seekers and recruiters through a scalable microservices-based portal. Powered by Java, Spring Boot, and RabbitMQ, it's built for seamless and efficient hiring.</p>
+          <a href="https://github.com/abhisheka9562/JobNest"><i class="fa fa-external-link"></i></a>
         </div>
       </div>
   
       <div class="work-card">
-        <img src="images/sec2-1.jpg" alt="Music App" />
+        <img src="images/ScheduleEase.jpg" alt="	ScheduleEase:	Finance	and	Task	Management	App" />
         <div class="layer">
-          <h3>Music App</h3>
-          <p>A sleek interface for streaming your favorite music effortlessly on the go.</p>
-          <a href="#"><i class="fa fa-external-link"></i></a>
+          <h3>	ScheduleEase:	Finance	and	Task	Management	App</h3>
+          <p>ScheduleEase helps you manage tasks and track finances effortlessly, all in one place. Built with Flutter and Hive for a fast, smooth user experience.</p>
+          <a href="https://github.com/abhisheka9562/Schedule_Ease"><i class="fa fa-external-link"></i></a>
         </div>
       </div>
   
       <div class="work-card">
-        <img src="images/sec2-1.jpg" alt="E-commerce App" />
+        <img src="images/Underwater.jpg" alt="Enhanced	Diver	Communication	System	using	Gesture	Recognition	" />
         <div class="layer">
-          <h3>E-commerce App</h3>
-          <p>Shop latest gadgets and lifestyle products with a user-friendly experience.</p>
+          <h3>Enhanced	Diver	Communication	System	using	Gesture	Recognition	</h3>
+          <p>Enhancing underwater communication through real-time gesture recognition using deep learning. Combines ResNet50 and Transformer encoder for precise and reliable diver interaction.</p>
           <a href="#"><i class="fa fa-external-link"></i></a>
         </div>
       </div>
@@ -103,7 +111,7 @@
     <div class="contact-container">
       <div class="contact-left">
         <h2>Contact Me</h2>
-        <p><i class="fa fa-paper-plane"></i> abhisheka9562@gmail.com</p>
+        <p><i class="fa fa-paper-plane"></i> abhisheka301019@gmail.com</p>
         <p><i class="fa fa-phone"></i> +91 9562594778</p>
   
         <div class="social-icons">
@@ -116,10 +124,10 @@
       </div>
   
       <div class="contact-right">
-        <form>
-          <input type="text" placeholder="Your Name" required />
-          <input type="email" placeholder="Your Email" required />
-          <textarea rows="6" placeholder="Your Message" required></textarea>
+        <form id="contact-form">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
           <button type="submit" class="btn submit-btn">Submit</button>
         </form>
       </div>
